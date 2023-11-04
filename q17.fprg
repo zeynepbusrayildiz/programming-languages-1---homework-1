@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Casper"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-04 11:18:01 &#214;S"/>
+        <attribute name="created" value="Q2FzcGVyO0RFU0tUT1AtUk5MQUVLNDsyMDIzLTExLTA0OzA5OjIzOjM5IMOWUzszMTA5"/>
+        <attribute name="edited" value="Q2FzcGVyO0RFU0tUT1AtUk5MQUVLNDsyMDIzLTExLTA0OzExOjE4OjAxIMOWUzszOzMyMDU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i" type="Integer" array="False" size=""/>
+            <declare name="S" type="Real" array="False" size=""/>
+            <output expression="&quot;Please enter a number:&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="i" expression="n"/>
+            <assign variable="S" expression="0"/>
+            <if expression="i&gt;1">
+                <then>
+                    <while expression="i!=0">
+                        <assign variable="S" expression="1/2^i+S"/>
+                        <assign variable="i" expression="i-1"/>
+                    </while>
+                    <output expression="S" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Error&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

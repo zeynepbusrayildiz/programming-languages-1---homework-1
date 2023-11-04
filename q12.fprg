@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Casper"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-31 11:09:18 &#214;S"/>
+        <attribute name="created" value="Q2FzcGVyO0RFU0tUT1AtUk5MQUVLNDsyMDIzLTEwLTMxOzExOjAzOjEwIMOWUzszMDg4"/>
+        <attribute name="edited" value="Q2FzcGVyO0RFU0tUT1AtUk5MQUVLNDsyMDIzLTEwLTMxOzExOjA5OjE4IMOWUzszOzMyMTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="low, high, step" type="Integer" array="False" size=""/>
+            <output expression="&quot;Please enter low value.&quot;" newline="True"/>
+            <input variable="low"/>
+            <output expression="&quot;Please enter high value.&quot;" newline="True"/>
+            <input variable="high"/>
+            <output expression="&quot;Please enter step value.&quot;" newline="True"/>
+            <input variable="step"/>
+            <while expression="low&lt;=high">
+                <output expression="low" newline="True"/>
+                <assign variable="low" expression="low+step"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

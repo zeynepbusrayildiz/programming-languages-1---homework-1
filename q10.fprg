@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Casper"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-31 09:39:25 &#214;S"/>
+        <attribute name="created" value="Q2FzcGVyO0RFU0tUT1AtUk5MQUVLNDsyMDIzLTEwLTMxOzA5OjM0OjQ1IMOWUzszMTA3"/>
+        <attribute name="edited" value="Q2FzcGVyO0RFU0tUT1AtUk5MQUVLNDsyMDIzLTEwLTMxOzA5OjM5OjI1IMOWUzszOzMyMjA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <output expression="&quot;Please enter A value:&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Please enter B value:&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;Please enter C value:&quot;" newline="True"/>
+            <input variable="c"/>
+            <if expression="a&gt;b&amp;&amp;a&gt;c">
+                <then>
+                    <output expression="&quot;The largest number is &quot;&amp;a" newline="False"/>
+                </then>
+                <else>
+                    <if expression="b&gt;a&amp;&amp;b&gt;c">
+                        <then>
+                            <output expression="&quot;The largest number is &quot;&amp;b" newline="False"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;The largest number is &quot;&amp;c" newline="False"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

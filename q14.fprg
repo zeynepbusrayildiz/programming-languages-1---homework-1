@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Casper"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-31 11:21:29 &#214;S"/>
+        <attribute name="created" value="Q2FzcGVyO0RFU0tUT1AtUk5MQUVLNDsyMDIzLTEwLTMxOzExOjE0OjA0IMOWUzszMDkz"/>
+        <attribute name="edited" value="Q2FzcGVyO0RFU0tUT1AtUk5MQUVLNDsyMDIzLTEwLTMxOzExOjIxOjI5IMOWUzszOzMyMDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, i, result" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="1"/>
+            <assign variable="result" expression="1"/>
+            <output expression="&quot;Please enter the number you want to calculate the factorial of:&quot;" newline="True"/>
+            <input variable="num"/>
+            <if expression="num&gt;0">
+                <then>
+                    <while expression="i&lt;=num">
+                        <assign variable="result" expression="result*i"/>
+                        <assign variable="i" expression="i+1"/>
+                    </while>
+                    <output expression="result" newline="True"/>
+                </then>
+                <else>
+                    <if expression="num==0">
+                        <then>
+                            <output expression="&quot;1&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;You entered a negative number.&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

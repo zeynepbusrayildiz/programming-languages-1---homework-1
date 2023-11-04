@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Casper"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-01 10:09:36 &#214;S"/>
+        <attribute name="created" value="Q2FzcGVyO0RFU0tUT1AtUk5MQUVLNDsyMDIzLTExLTAxOzA4OjQ2OjEwIMOWUzszMDk5"/>
+        <attribute name="edited" value="Q2FzcGVyO0RFU0tUT1AtUk5MQUVLNDsyMDIzLTExLTAxOzEwOjA5OjM2IMOWUzs4OzMyMTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, last, first, i, temp, rem" type="Integer" array="False" size=""/>
+            <output expression="&quot;Please enter a number.&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="temp" expression="n"/>
+            <assign variable="i" expression="0"/>
+            <while expression="temp!=0">
+                <assign variable="i" expression="i+1"/>
+                <assign variable="temp" expression="temp/10"/>
+            </while>
+            <assign variable="first" expression="n/(10^(i-1))"/>
+            <assign variable="last" expression="n%10"/>
+            <output expression="&quot;First digit is &quot;&amp;first" newline="True"/>
+            <output expression="&quot;The last digit is &quot;&amp;last" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

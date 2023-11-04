@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Casper"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-01 12:22:06 &#214;&#214;"/>
+        <attribute name="created" value="Q2FzcGVyO0RFU0tUT1AtUk5MQUVLNDsyMDIzLTEwLTMxOzExOjI5OjQzIMOWUzszMTAy"/>
+        <attribute name="edited" value="Q2FzcGVyO0RFU0tUT1AtUk5MQUVLNDsyMDIzLTExLTAxOzEyOjIyOjA2IMOWw5Y7MTA7MzM4MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ebob, n1, n2, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Please enter two positive numbers t find their hcf:&quot;" newline="True"/>
+            <output expression="&quot;Please enter the first number:&quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;Please enter the second number:&quot;" newline="True"/>
+            <input variable="n2"/>
+            <if expression="n1&gt;0&amp;&amp;n2&gt;0">
+                <then>
+                    <assign variable="i" expression="1"/>
+                    <assign variable="ebob" expression="1"/>
+                    <if expression="n1&lt;n2">
+                        <then>
+                            <while expression="i&lt;=n1">
+                                <if expression="n1%i==0&amp;&amp;n2%i==0">
+                                    <then>
+                                        <assign variable="ebob" expression="i"/>
+                                    </then>
+                                    <else/>
+                                </if>
+                                <assign variable="i" expression="i+1"/>
+                            </while>
+                        </then>
+                        <else>
+                            <if expression="n1==n2">
+                                <then>
+                                    <assign variable="ebob" expression="n1"/>
+                                </then>
+                                <else>
+                                    <while expression="i&lt;=n2">
+                                        <if expression="n1%i==0&amp;&amp;n2%i==0">
+                                            <then>
+                                                <assign variable="ebob" expression="i"/>
+                                            </then>
+                                            <else/>
+                                        </if>
+                                        <assign variable="i" expression="i+1"/>
+                                    </while>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                    <output expression="ebob" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;You didn't enter positive numbers.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Casper"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-31 09:09:39 &#214;S"/>
+        <attribute name="created" value="Q2FzcGVyO0RFU0tUT1AtUk5MQUVLNDsyMDIzLTEwLTMxOzA5OjAzOjIwIMOWUzszMDk2"/>
+        <attribute name="edited" value="Q2FzcGVyO0RFU0tUT1AtUk5MQUVLNDsyMDIzLTEwLTMxOzA5OjA5OjM5IMOWUzsyOzMyMjE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ct, ft" type="Real" array="False" size=""/>
+            <output expression="&quot;Please enter temperature in Fahrenheit:&quot;" newline="True"/>
+            <input variable="ft"/>
+            <assign variable="ct" expression="(ft-32)*5/9"/>
+            <output expression="&quot;Temperature is &quot;&amp;ct&amp;&quot; degrees in Celsius.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

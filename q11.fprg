@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Casper"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-31 11:02:43 &#214;S"/>
+        <attribute name="created" value="Q2FzcGVyO0RFU0tUT1AtUk5MQUVLNDsyMDIzLTEwLTMxOzA5OjQwOjEwIMOWUzszMDk2"/>
+        <attribute name="edited" value="Q2FzcGVyO0RFU0tUT1AtUk5MQUVLNDsyMDIzLTEwLTMxOzExOjAyOjQzIMOWUzs0OzMyMDQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, product, sum, num" type="Integer" array="False" size=""/>
+            <assign variable="product" expression="1"/>
+            <assign variable="sum" expression="0"/>
+            <assign variable="i" expression="0"/>
+            <while expression="i&lt;10">
+                <output expression="&quot;Please enter a number:&quot;" newline="True"/>
+                <input variable="num"/>
+                <assign variable="sum" expression="sum+num"/>
+                <assign variable="product" expression="product*num"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <output expression="&quot;Sum of the numbers is &quot;&amp;sum" newline="True"/>
+            <output expression="&quot;Product of the numbers is &quot;&amp;product" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

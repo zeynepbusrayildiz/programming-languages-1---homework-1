@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Casper"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-31 08:53:15 &#214;S"/>
+        <attribute name="created" value="Q2FzcGVyO0RFU0tUT1AtUk5MQUVLNDsyMDIzLTEwLTMxOzA4OjQ4OjI2IMOWUzszMTEw"/>
+        <attribute name="edited" value="Q2FzcGVyO0RFU0tUT1AtUk5MQUVLNDsyMDIzLTEwLTMxOzA4OjUzOjE1IMOWUzsyOzMyMTM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="r" type="Integer" array="False" size=""/>
+            <declare name="a, pivalue" type="Real" array="False" size=""/>
+            <assign variable="pivalue" expression="3.14"/>
+            <output expression="&quot;Please enter the radius of the circle.&quot;" newline="True"/>
+            <input variable="r"/>
+            <assign variable="a" expression="pivalue*r*r"/>
+            <output expression="&quot;Area = &quot;&amp;a" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

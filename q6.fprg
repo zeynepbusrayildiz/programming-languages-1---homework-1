@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Casper"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-31 09:15:40 &#214;S"/>
+        <attribute name="created" value="Q2FzcGVyO0RFU0tUT1AtUk5MQUVLNDsyMDIzLTEwLTMxOzA5OjA5OjU3IMOWUzszMTEy"/>
+        <attribute name="edited" value="Q2FzcGVyO0RFU0tUT1AtUk5MQUVLNDsyMDIzLTEwLTMxOzA5OjE1OjQwIMOWUzsyOzMyMTA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="f, c" type="Real" array="False" size=""/>
+            <output expression="&quot;Please enter the length in feet:&quot;" newline="True"/>
+            <input variable="f"/>
+            <assign variable="c" expression="f*30.48"/>
+            <output expression="f&amp;&quot; feet is &quot;&amp;c&amp;&quot; centimeters.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

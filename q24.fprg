@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Casper"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-04 11:43:52 &#214;S"/>
+        <attribute name="created" value="Q2FzcGVyO0RFU0tUT1AtUk5MQUVLNDsyMDIzLTExLTA0OzExOjM3OjE1IMOWUzszMTAx"/>
+        <attribute name="edited" value="Q2FzcGVyO0RFU0tUT1AtUk5MQUVLNDsyMDIzLTExLTA0OzExOjQzOjUyIMOWUzs0OzMyMTA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, count, temp, digit" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <output expression="&quot;Please enter a number:&quot;" newline="True"/>
+            <input variable="n"/>
+            <for variable="i" start="0" end="9" direction="inc" step="1">
+                <assign variable="count" expression="0"/>
+                <assign variable="temp" expression="n"/>
+                <while expression="temp&gt;0">
+                    <assign variable="digit" expression="temp%10"/>
+                    <if expression="digit==i">
+                        <then>
+                            <assign variable="count" expression="count+1"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <assign variable="temp" expression="temp/10"/>
+                </while>
+                <if expression="count&gt;0">
+                    <then>
+                        <output expression="&quot;Number &quot;&amp;i&amp;&quot; appears &quot;&amp;count&amp;&quot; times&quot;" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
